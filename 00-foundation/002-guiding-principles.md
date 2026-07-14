@@ -1,41 +1,41 @@
-# 002 — Guiding Principles
+# 002 — Prinsip Panduan
 
-## 1. SWI Core Comes First
+## 1. SWI Core Menjadi Acuan Utama
 
-Every project must support the direction of SWI as a whole. Product-level documents may extend SWI Core but must not invent a competing company vision.
+Setiap proyek harus mendukung arah SWI secara keseluruhan. Dokumen pada tingkat produk boleh mengembangkan SWI Core, tetapi tidak boleh menciptakan visi perusahaan tandingan.
 
-## 2. One Source of Truth per Domain
+## 2. Satu Sumber Kebenaran untuk Setiap Domain
 
-Every important data domain and decision must have an identified authoritative source. Duplicated working copies must not quietly become parallel truth.
+Setiap domain data dan keputusan penting harus memiliki sumber yang jelas dan berwenang. Salinan kerja tidak boleh secara diam-diam berubah menjadi sumber kebenaran paralel.
 
-## 3. Documentation Before Irreversible Implementation
+## 3. Dokumentasi Sebelum Implementasi yang Sulit Dibalikkan
 
-Small experiments may move quickly, but material product, financial, security, data, and architecture decisions must be documented before implementation becomes difficult to reverse.
+Eksperimen kecil boleh bergerak cepat. Namun, keputusan penting mengenai produk, keuangan, keamanan, data, dan arsitektur harus didokumentasikan sebelum implementasinya sulit atau mahal untuk dibatalkan.
 
-## 4. Humans Own Accountability
+## 4. Manusia Memegang Akuntabilitas
 
-AI may research, recommend, draft, build, test, and monitor. A named human owner remains accountable for business-critical decisions and approvals.
+AI dapat melakukan riset, memberikan rekomendasi, menyusun dokumen, membangun, menguji, dan memantau. Namun, pemilik manusia yang disebutkan secara jelas tetap bertanggung jawab atas keputusan dan persetujuan yang kritis bagi bisnis.
 
-## 5. AI Assists; Humans Decide
+## 5. AI Membantu; Manusia Memutuskan
 
-AI must not independently approve payments, alter critical business states, publish sensitive content, or bypass defined controls.
+AI tidak boleh secara mandiri menyetujui pembayaran, mengubah status bisnis yang kritis, menerbitkan konten sensitif, atau melewati kontrol yang telah ditetapkan.
 
-## 6. Auditability by Default
+## 6. Auditabilitas Sejak Awal
 
-Transactions, approvals, inventory changes, formula changes, settlements, and critical system actions must leave a trace that can be reviewed.
+Transaksi, persetujuan, perubahan inventory, perubahan formula, settlement, dan tindakan sistem yang kritis harus meninggalkan jejak yang dapat ditinjau.
 
-## 7. Build Modularly
+## 7. Bangun secara Modular
 
-Shared capabilities should be reusable, while product-specific workflows remain isolated enough to evolve safely.
+Kapabilitas bersama harus dapat digunakan kembali, sementara workflow khusus produk harus cukup terisolasi agar dapat berkembang dengan aman.
 
-## 8. Start with the Smallest Valuable Release
+## 8. Mulai dari Rilis Bernilai Terkecil
 
-MVP means the smallest release that can safely deliver and validate real value—not an incomplete collection of features.
+MVP adalah rilis terkecil yang dapat memberikan dan memvalidasi nilai nyata dengan aman—bukan sekumpulan fitur yang belum selesai.
 
-## 9. Verify Before Declaring Done
+## 9. Verifikasi Sebelum Menyatakan Selesai
 
-Work is not complete because code or documentation exists. It is complete when the stated acceptance criteria have been checked.
+Pekerjaan tidak selesai hanya karena kode atau dokumen sudah dibuat. Pekerjaan selesai ketika acceptance criteria yang ditetapkan telah diperiksa.
 
-## 10. Improve the System, Not Only the Output
+## 10. Perbaiki Sistemnya, Bukan Hanya Hasilnya
 
-Every recurring mistake is a signal to improve documentation, automation, tooling, or process.
+Kesalahan yang berulang merupakan sinyal untuk memperbaiki dokumentasi, otomasi, alat kerja, atau proses.
