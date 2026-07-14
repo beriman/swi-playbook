@@ -1,39 +1,39 @@
-# 001 — Scope
+# 001 — Ruang Lingkup
 
-## In Scope
+## Termasuk dalam Ruang Lingkup
 
-SWI Playbook governs shared ways of working across the SWI ecosystem, including:
+SWI Playbook mengatur cara kerja bersama di seluruh ekosistem SWI, termasuk:
 
-- product discovery and planning;
-- documentation standards;
-- GitHub repository and issue workflows;
-- PRD and Architecture Decision Record standards;
-- AI roles and context handoff;
-- development, testing, review, and release practices;
-- operational approvals and auditability;
-- continuous improvement of the playbook itself.
+- product discovery dan perencanaan;
+- standar dokumentasi;
+- workflow repositori dan issue GitHub;
+- standar PRD dan Architecture Decision Record (ADR);
+- pembagian peran AI serta handoff konteks;
+- praktik development, testing, review, dan release;
+- persetujuan operasional dan auditabilitas;
+- peningkatan berkelanjutan terhadap playbook ini.
 
-## Out of Scope
+## Di Luar Ruang Lingkup
 
-This repository does not become the source of truth for:
+Repositori ini bukan sumber kebenaran utama untuk:
 
-- SWI corporate vision, mission, or pillars;
-- product-specific requirements;
+- visi, misi, atau pilar perusahaan SWI;
+- requirement yang khusus untuk satu produk;
 - source code;
-- production credentials or secrets;
-- customer, employee, or financial transaction data;
-- detailed SOPs that belong to a specific product or business unit.
+- credential produksi atau secrets;
+- data pelanggan, karyawan, atau transaksi keuangan;
+- SOP rinci yang hanya berlaku pada satu produk atau unit bisnis.
 
-These remain in their owning repositories or approved operational systems.
+Informasi tersebut tetap berada pada repositori pemiliknya atau sistem operasional yang telah disetujui.
 
-## Precedence
+## Urutan Otoritas Dokumen
 
-When documents conflict, use this order:
+Apabila terdapat konflik, gunakan urutan berikut:
 
-1. applicable law and contractual obligations;
-2. SWI Core direction in `systemswi`;
-3. approved product-specific decisions and PRDs;
-4. SWI Playbook standards;
-5. informal chat or working notes.
+1. hukum dan kewajiban kontraktual yang berlaku;
+2. arah SWI Core dalam `systemswi`;
+3. keputusan dan PRD khusus produk yang telah disetujui;
+4. standar SWI Playbook;
+5. percakapan informal atau catatan kerja.
 
-Conflicts should be recorded and resolved, not silently interpreted.
+Konflik harus dicatat dan diselesaikan, bukan ditafsirkan secara diam-diam.
