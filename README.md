@@ -1,37 +1,37 @@
 # SWI Playbook
 
-**Shared operating playbook for humans and AI across the SWI ecosystem.**
+**Panduan kerja bersama untuk manusia dan AI di seluruh ekosistem SWI.**
 
-SWI Playbook is the common operating manual for how PT Sensasi Wangi Indonesia plans, decides, documents, builds, reviews, operates, and improves its products and initiatives.
+SWI Playbook adalah pedoman operasional bersama yang menjelaskan bagaimana PT Sensasi Wangi Indonesia merencanakan, memutuskan, mendokumentasikan, membangun, meninjau, menjalankan, dan meningkatkan produk serta inisiatifnya.
 
-This repository is designed to be used by:
+Repositori ini dirancang untuk digunakan oleh:
 
-- SWI leadership and product owners
-- human contributors and operators
-- ChatGPT and ChatGPT Work
-- Codex and engineering agents
-- Hermes and operational agents
-- future collaborators across the SWI ecosystem
+- pimpinan SWI dan Product Owner;
+- kontributor serta operator manusia;
+- ChatGPT dan ChatGPT Work;
+- Codex dan agen engineering;
+- Hermes dan agen operasional;
+- kolaborator masa depan di seluruh ekosistem SWI.
 
-## Core Principle
+## Prinsip Utama
 
-> GitHub is the shared source of truth. Important ideas become decisions, decisions become documentation, documentation becomes implementation, and implementation is verified before release.
+> GitHub adalah sumber kebenaran bersama. Ide penting menjadi keputusan, keputusan menjadi dokumentasi, dokumentasi menjadi implementasi, dan implementasi harus diverifikasi sebelum dirilis.
 
 ## Status
 
-**Version:** 0.1 Foundation  
-**Phase:** Bootstrap
+**Versi:** 0.1 — Fondasi  
+**Fase:** Bootstrap
 
-## Planned Structure
+## Struktur yang Direncanakan
 
-- `00-foundation/` — purpose, scope, principles, and glossary
-- `01-governance/` — roles, decision rights, approvals, and ADRs
-- `02-workflows/` — idea-to-release and operational workflows
-- `03-ai-team/` — AI roles, context handoff, and prompt standards
-- `04-engineering/` — repository, code, testing, and security standards
-- `05-product/` — discovery, PRD, roadmap, and release standards
-- `templates/` — reusable templates for ideas, PRDs, ADRs, issues, and handoffs
+- `00-foundation/` — tujuan, ruang lingkup, prinsip, dan glosarium;
+- `01-governance/` — peran, hak keputusan, persetujuan, dan ADR;
+- `02-workflows/` — alur ide hingga rilis dan workflow operasional;
+- `03-ai-team/` — peran AI, serah-terima konteks, dan standar prompt;
+- `04-engineering/` — standar repositori, kode, pengujian, dan keamanan;
+- `05-product/` — discovery, PRD, roadmap, dan standar rilis;
+- `templates/` — template ide, PRD, ADR, issue, dan handoff.
 
-## Relationship to SWI Core
+## Hubungan dengan SWI Core
 
-SWI Playbook does not replace the vision, mission, pillars, or enterprise direction defined by SWI Core. It translates them into consistent ways of working across projects such as `systemswi`, `sensasiwangi.id`, `swi-store-os`, DON!, events, community initiatives, and future SWI products.
+SWI Playbook tidak menggantikan visi, misi, pilar, atau arah perusahaan yang ditetapkan dalam SWI Core. Playbook ini menerjemahkannya menjadi cara kerja yang konsisten di berbagai proyek, seperti `systemswi`, `sensasiwangi.id`, `swi-store-os`, DON!, event, komunitas, dan produk SWI pada masa mendatang.
