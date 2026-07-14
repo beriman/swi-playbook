@@ -1,26 +1,26 @@
-# 000 — Purpose
+# 000 — Tujuan
 
-## Why SWI Playbook Exists
+## Mengapa SWI Playbook Dibuat
 
-SWI operates through multiple brands, platforms, events, communities, products, and AI-assisted workflows. Without a shared way of working, knowledge becomes fragmented across conversations, documents, repositories, spreadsheets, and individual memory.
+SWI berjalan melalui berbagai brand, platform, event, komunitas, produk, dan workflow berbantuan AI. Tanpa cara kerja bersama, pengetahuan akan terpecah di antara percakapan, dokumen, repositori, spreadsheet, dan ingatan masing-masing orang.
 
-SWI Playbook exists to create one durable operating language for humans and AI.
+SWI Playbook dibuat untuk membangun satu bahasa operasional yang tahan lama bagi manusia dan AI.
 
-It defines how SWI:
+Playbook ini menjelaskan bagaimana SWI:
 
-1. turns ideas into structured proposals;
-2. evaluates and approves decisions;
-3. records product and architecture decisions;
-4. hands work between humans and AI agents;
-5. develops, tests, releases, and operates systems;
-6. learns from results and updates its standards.
+1. mengubah ide menjadi usulan yang terstruktur;
+2. mengevaluasi dan menyetujui keputusan;
+3. mencatat keputusan produk dan arsitektur;
+4. melakukan handoff pekerjaan antara manusia dan agen AI;
+5. membangun, menguji, merilis, dan mengoperasikan sistem;
+6. belajar dari hasil serta memperbarui standarnya.
 
-## Desired Outcome
+## Hasil yang Diharapkan
 
-A contributor should be able to enter an SWI project, read its core documents, understand the current state, and continue the work without reconstructing the entire history from chat.
+Seorang kontributor harus dapat masuk ke proyek SWI, membaca dokumen intinya, memahami kondisi terkini, dan melanjutkan pekerjaan tanpa harus menyusun ulang seluruh sejarah proyek dari percakapan chat.
 
-## Operating Statement
+## Pernyataan Operasional
 
-> SWI Playbook is the shared operating system for collaboration, not a replacement for judgment.
+> SWI Playbook adalah sistem kerja bersama untuk kolaborasi, bukan pengganti penilaian manusia.
 
-The playbook provides structure. The Product Owner retains direction and final decision authority.
+Playbook memberikan struktur. Product Owner tetap memegang arah dan kewenangan keputusan akhir.
