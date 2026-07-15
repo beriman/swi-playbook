@@ -7,7 +7,7 @@
 - **Agent/implementer:** ChatGPT Work / Codex
 - **Repository:** `beriman/swi-playbook`
 - **Branch:** `agent/bootstrap-playbook-v0.1`
-- **Related issue/PR/commit:** diperbarui pada completion record setelah publikasi
+- **Related issue/PR/commit:** [PR #1](https://github.com/beriman/swi-playbook/pull/1), [implementation commit `f8fc426`](https://github.com/beriman/swi-playbook/commit/f8fc426ceaf21436b755d6b49d93bfd35677ffb9)
 
 ## Ringkasan
 
