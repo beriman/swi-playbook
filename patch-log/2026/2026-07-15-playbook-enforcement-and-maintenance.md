@@ -7,7 +7,7 @@
 - **Agent/implementer:** Codex
 - **Repository:** `beriman/swi-playbook`
 - **Branch:** `agent/playbook-enforcement-maintenance`
-- **Related issue/PR/commit:** [Issue #2](https://github.com/beriman/swi-playbook/issues/2); PR dan commit ditambahkan setelah publikasi branch
+- **Related issue/PR/commit:** [Issue #2](https://github.com/beriman/swi-playbook/issues/2), [PR #3](https://github.com/beriman/swi-playbook/pull/3), [implementation commit `80cf947`](https://github.com/beriman/swi-playbook/commit/80cf947d2f94b9846708c3b939cc53f8cee7a723)
 
 ## Ringkasan
 
