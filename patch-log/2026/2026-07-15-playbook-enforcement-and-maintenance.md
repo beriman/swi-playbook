@@ -2,7 +2,7 @@
 
 - **Versi/release:** v0.1.1
 - **Tanggal:** 2026-07-15
-- **Status:** Draft; menjadi Released setelah merge ke `main`
+- **Status:** Released setelah merge ke `main`
 - **Human owner:** Beriman / Product Owner SWI
 - **Agent/implementer:** Codex
 - **Repository:** `beriman/swi-playbook`
@@ -51,7 +51,7 @@ Menjadikan kualitas SWI Playbook dapat diperiksa otomatis pada setiap pull reque
 | `node scripts/verify-playbook.mjs` | PASS | 55 file terlacak, 52 Markdown, dan 55 minimum paths lulus |
 | `npx --yes markdownlint-cli2@0.23.0 '**/*.md' '#node_modules' '#.git'` | PASS | 52 file Markdown, 0 error |
 | `git diff --cached --check` | PASS | tidak ada whitespace error |
-| GitHub Actions `Documentation quality` | NOT RUN | dijalankan pada pull request |
+| GitHub Actions `Documentation quality` | PASS | [PR run #2](https://github.com/beriman/swi-playbook/actions/runs/29386259147) selesai sukses |
 
 ## Impact
 
