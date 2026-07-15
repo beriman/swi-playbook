@@ -1,39 +1,50 @@
 # 001 — Ruang Lingkup
 
-## Termasuk dalam Ruang Lingkup
+## Yang Diatur
 
 SWI Playbook mengatur cara kerja bersama di seluruh ekosistem SWI, termasuk:
 
-- product discovery dan perencanaan;
-- standar dokumentasi;
-- workflow repositori dan issue GitHub;
-- standar PRD dan Architecture Decision Record (ADR);
-- pembagian peran AI serta handoff konteks;
-- praktik development, testing, review, dan release;
-- persetujuan operasional dan auditabilitas;
-- peningkatan berkelanjutan terhadap playbook ini.
+- product discovery, riset, dan prioritas;
+- pencatatan keputusan dan standar dokumentasi;
+- PRD, ADR, business rules, data contract, dan acceptance criteria;
+- pembagian peran manusia dan AI;
+- AI handoff dan batas kewenangan;
+- issue, branch, commit, pull request, dan patch log;
+- development, testing, review, deployment, dan rollback;
+- automation, monitoring, exception handling, dan audit trail;
+- klasifikasi risiko, approval, dan trusted changes;
+- pembelajaran setelah rilis atau insiden.
 
-## Di Luar Ruang Lingkup
+Playbook berlaku untuk pekerjaan lintas Media, Komunitas, Event, dan Retail, termasuk aktivitas yang memiliki satu pilar utama dan beberapa pilar kolaborator.
 
-Repositori ini bukan sumber kebenaran utama untuk:
+## Yang Tidak Digantikan
 
-- visi, misi, atau pilar perusahaan SWI;
-- requirement yang khusus untuk satu produk;
-- source code;
-- credential produksi atau secrets;
-- data pelanggan, karyawan, atau transaksi keuangan;
-- SOP rinci yang hanya berlaku pada satu produk atau unit bisnis.
+Repository ini bukan source of truth utama untuk:
 
-Informasi tersebut tetap berada pada repositori pemiliknya atau sistem operasional yang telah disetujui.
+- visi, misi, cita-cita besar, atau arah perusahaan;
+- requirement dan SOP rinci milik satu produk atau unit;
+- source code dan konfigurasi aplikasi;
+- data pelanggan, komunitas, karyawan, transaksi, atau finansial;
+- credential, API key, token, secret, dan konfigurasi produksi;
+- kontrak, dokumen legal, atau data lain yang memiliki sistem resmi sendiri.
 
-## Urutan Otoritas Dokumen
+Informasi tersebut tetap berada di repository atau sistem pemilik domainnya. Playbook hanya menjelaskan cara mengelolanya bersama.
 
-Apabila terdapat konflik, gunakan urutan berikut:
+## Cakupan Pengguna
 
-1. hukum dan kewajiban kontraktual yang berlaku;
-2. arah SWI Core dalam `systemswi`;
-3. keputusan dan PRD khusus produk yang telah disetujui;
-4. standar SWI Playbook;
-5. percakapan informal atau catatan kerja.
+Playbook ini digunakan oleh pimpinan, Product Owner, tim manusia, operator, ChatGPT, ChatGPT Work, Codex, HemuHemu, agen AI lain, developer, dan kolaborator masa depan.
 
-Konflik harus dicatat dan diselesaikan, bukan ditafsirkan secara diam-diam.
+## Urutan Rujukan Saat Terjadi Konflik
+
+1. hukum, kewajiban kontraktual, dan instruksi resmi yang berlaku;
+2. visi serta arah perusahaan yang disetujui dan dicatat dalam SystemSWI;
+3. keputusan produk, PRD, ADR, data contract, atau SOP domain yang telah disetujui;
+4. standar pada SWI Playbook;
+5. issue dan catatan kerja yang belum menjadi keputusan;
+6. percakapan informal.
+
+Jika dua sumber resmi bertentangan, jangan memilih diam-diam. Catat konflik, hentikan bagian yang berisiko, dan minta keputusan kepada owner yang berwenang.
+
+## Batas Perubahan
+
+Playbook tidak memberikan izin otomatis untuk memindahkan source of truth, mengubah data produksi, memperluas permission, atau mengganti kebijakan bisnis. Tindakan tersebut memerlukan keputusan resmi sesuai tingkat risikonya.

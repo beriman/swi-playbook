@@ -1,41 +1,49 @@
 # 002 — Prinsip Panduan
 
-## 1. SWI Core Menjadi Acuan Utama
+## 1. Selaras dengan SWI
 
-Setiap proyek harus mendukung arah SWI secara keseluruhan. Dokumen pada tingkat produk boleh mengembangkan SWI Core, tetapi tidak boleh menciptakan visi perusahaan tandingan.
+Setiap pekerjaan harus membantu SWI bergerak menuju kemandirian wewangian Indonesia. Requirement produk boleh lebih rinci, tetapi tidak boleh menciptakan arah perusahaan tandingan.
 
-## 2. Satu Sumber Kebenaran untuk Setiap Domain
+## 2. SWI adalah Ekosistem
 
-Setiap domain data dan keputusan penting harus memiliki sumber yang jelas dan berwenang. Salinan kerja tidak boleh secara diam-diam berubah menjadi sumber kebenaran paralel.
+Media, Komunitas, Event, dan Retail saling menguatkan. Pilar utama menunjukkan fokus; pilar kolaborator menunjukkan kontribusi lintas ekosistem. Pilar tidak boleh dipakai sebagai silo kaku.
 
-## 3. Dokumentasi Sebelum Implementasi yang Sulit Dibalikkan
+## 3. Satu Sumber Kebenaran per Domain
 
-Eksperimen kecil boleh bergerak cepat. Namun, keputusan penting mengenai produk, keuangan, keamanan, data, dan arsitektur harus didokumentasikan sebelum implementasinya sulit atau mahal untuk dibatalkan.
+Setiap domain data dan keputusan penting harus memiliki source of truth yang jelas. Salinan, cache, dashboard, atau chat tidak boleh diam-diam berubah menjadi sumber baru. Migrasi source of truth selalu memerlukan keputusan resmi.
 
-## 4. Manusia Memegang Akuntabilitas
+## 4. Dokumentasi Sebelum Perubahan Material
 
-AI dapat melakukan riset, memberikan rekomendasi, menyusun dokumen, membangun, menguji, dan memantau. Namun, pemilik manusia yang disebutkan secara jelas tetap bertanggung jawab atas keputusan dan persetujuan yang kritis bagi bisnis.
+Perubahan yang sulit, mahal, atau berbahaya untuk dibalikkan harus memiliki konteks, acceptance criteria, verification plan, dan rollback plan sebelum implementasi. Keputusan arsitektur material dicatat sebagai ADR.
 
-## 5. AI Membantu; Manusia Memutuskan
+## 5. AI Membantu; Manusia Bertanggung Jawab
 
-AI tidak boleh secara mandiri menyetujui pembayaran, mengubah status bisnis yang kritis, menerbitkan konten sensitif, atau melewati kontrol yang telah ditetapkan.
+AI boleh meneliti, menyusun, mengimplementasikan, menguji, dan memantau dalam batas tugasnya. Human owner tetap bertanggung jawab atas keputusan kritis, penggunaan kewenangan, dan penerimaan hasil bisnis.
 
 ## 6. Auditabilitas Sejak Awal
 
-Transaksi, persetujuan, perubahan inventory, perubahan formula, settlement, dan tindakan sistem yang kritis harus meninggalkan jejak yang dapat ditinjau.
+Perubahan penting harus meninggalkan jejak yang dapat ditinjau: siapa melakukan apa, atas dasar keputusan mana, kapan, terhadap artifact apa, dan bagaimana hasilnya diverifikasi.
 
-## 7. Bangun secara Modular
+## 7. Build Modularly
 
-Kapabilitas bersama harus dapat digunakan kembali, sementara workflow khusus produk harus cukup terisolasi agar dapat berkembang dengan aman.
+Kapabilitas bersama boleh digunakan ulang, tetapi tidak semua produk harus dipaksa masuk ke satu aplikasi atau repository. Batas domain, kontrak, dan ownership harus tetap jelas.
 
-## 8. Mulai dari Rilis Bernilai Terkecil
+## 8. Rilis Bernilai Terkecil
 
-MVP adalah rilis terkecil yang dapat memberikan dan memvalidasi nilai nyata dengan aman—bukan sekumpulan fitur yang belum selesai.
+MVP adalah rilis terkecil yang aman dan dapat menguji nilai nyata. MVP bukan alasan untuk melewatkan keamanan, integritas data, atau acceptance criteria yang esensial.
 
 ## 9. Verifikasi Sebelum Menyatakan Selesai
 
-Pekerjaan tidak selesai hanya karena kode atau dokumen sudah dibuat. Pekerjaan selesai ketika acceptance criteria yang ditetapkan telah diperiksa.
+File atau kode yang sudah dibuat belum berarti selesai. Pekerjaan selesai setelah acceptance criteria diperiksa dan evidence tersedia.
 
-## 10. Perbaiki Sistemnya, Bukan Hanya Hasilnya
+## 10. Trusted Changes Tetap Tercatat
 
-Kesalahan yang berulang merupakan sinyal untuk memperbaiki dokumentasi, otomasi, alat kerja, atau proses.
+Perubahan kecil, aman, reversible, dan selaras dapat dikerjakan tanpa meminta approval pada setiap detail. Kecepatan tidak menghapus kewajiban verification, commit history, patch log, atau laporan.
+
+## 11. Keputusan Penting Tidak Boleh Hanya Hidup di Chat
+
+Chat adalah ruang berpikir, bukan arsip keputusan akhir. Keputusan dianggap tuntas setelah dicatat di repository yang tepat sebagai dokumentasi, PRD, ADR, issue, patch log, SOP, data contract, atau acceptance record.
+
+## 12. Perbaiki Sistem dari Pembelajaran
+
+Kesalahan atau pengecualian berulang menjadi sinyal untuk memperbaiki business rules, dokumentasi, test, monitoring, automation, atau proses—bukan hanya menambal hasil satu kali.

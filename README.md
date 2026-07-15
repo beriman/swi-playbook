@@ -1,37 +1,85 @@
 # SWI Playbook
 
-**Shared operating playbook for humans and AI across the SWI ecosystem.**
+Panduan resmi cara kerja bersama manusia dan AI di seluruh ekosistem PT Sensasi Wangi Indonesia.
 
-SWI Playbook is the common operating manual for how PT Sensasi Wangi Indonesia plans, decides, documents, builds, reviews, operates, and improves its products and initiatives.
+- **Versi:** v0.1 — Foundation
+- **Status:** aktif sebagai fondasi; disempurnakan melalui perubahan yang tercatat
+- **Pemilik:** Beriman / Product Owner SWI
 
-This repository is designed to be used by:
+## Arah yang Dijaga
 
-- SWI leadership and product owners
-- human contributors and operators
-- ChatGPT and ChatGPT Work
-- Codex and engineering agents
-- Hermes and operational agents
-- future collaborators across the SWI ecosystem
+> “Menjadi arsitek utama kemandirian wewangian Indonesia, merancang masa depan dimana kekayaan Nusantara menjadi tuan rumah yang berdaulat dan disegani dunia.”
 
-## Core Principle
+SWI bekerja sebagai satu ekosistem dengan empat pilar utama:
 
-> GitHub is the shared source of truth. Important ideas become decisions, decisions become documentation, documentation becomes implementation, and implementation is verified before release.
+1. Media;
+2. Komunitas;
+3. Event;
+4. Retail.
 
-## Status
+Pilar utama menunjukkan fokus terbesar suatu produk atau aktivitas. Pilar kolaborator menunjukkan kontribusinya kepada bagian ekosistem yang lain. Pilar bukan silo organisasi yang kaku.
 
-**Version:** 0.1 Foundation  
-**Phase:** Bootstrap
+## Fungsi Playbook
 
-## Planned Structure
+SWI Playbook menjelaskan bagaimana SWI:
 
-- `00-foundation/` — purpose, scope, principles, and glossary
-- `01-governance/` — roles, decision rights, approvals, and ADRs
-- `02-workflows/` — idea-to-release and operational workflows
-- `03-ai-team/` — AI roles, context handoff, and prompt standards
-- `04-engineering/` — repository, code, testing, and security standards
-- `05-product/` — discovery, PRD, roadmap, and release standards
-- `templates/` — reusable templates for ideas, PRDs, ADRs, issues, and handoffs
+- menangkap ide, meneliti masalah, dan membuat keputusan;
+- mendokumentasikan PRD, ADR, business rules, dan data contract;
+- melakukan handoff antara manusia, ChatGPT, ChatGPT Work, Codex, dan HemuHemu;
+- mengembangkan software serta automation secara aman;
+- mengklasifikasikan risiko dan meminta approval yang tepat;
+- melakukan review, verification, release, rollback, dan pembelajaran;
+- menjaga audit trail dan keselarasan lintas proyek.
 
-## Relationship to SWI Core
+Playbook ini tidak menggantikan visi dan misi perusahaan, dokumentasi produk, SOP khusus unit, source code, data transaksi, credential, atau konfigurasi produksi. Informasi tersebut tetap berada di sistem pemilik domainnya.
 
-SWI Playbook does not replace the vision, mission, pillars, or enterprise direction defined by SWI Core. It translates them into consistent ways of working across projects such as `systemswi`, `sensasiwangi.id`, `swi-store-os`, DON!, events, community initiatives, and future SWI products.
+## Pengguna
+
+- pimpinan SWI dan Product Owner;
+- tim manusia, operator, dan reviewer;
+- ChatGPT dan ChatGPT Work;
+- Codex;
+- HemuHemu yang berjalan pada Hermes Agent;
+- developer, mitra, dan kolaborator masa depan.
+
+## Mulai dari Sini
+
+Jika baru bergabung, baca berurutan:
+
+1. [Tujuan](00-foundation/000-purpose.md), [ruang lingkup](00-foundation/001-scope.md), dan [keselarasan SWI](00-foundation/003-swi-alignment.md).
+2. [Peran dan tanggung jawab](01-governance/roles-and-responsibilities.md), [hak keputusan](01-governance/decision-rights.md), serta [risiko dan approval](01-governance/risk-and-approval.md).
+3. [Idea-to-Release](02-workflows/idea-to-release.md), [GitHub workflow](02-workflows/github-workflow.md), dan [AI handoff](02-workflows/ai-handoff.md).
+4. [Definition of Done](04-engineering/definition-of-done.md) sebelum menyatakan pekerjaan selesai.
+
+Untuk memulai pekerjaan baru, gunakan [template ide](templates/idea-template.md), [template issue](templates/issue-template.md), atau [template PRD](templates/prd-template.md) sesuai ukuran masalahnya.
+
+## Peta Dokumentasi
+
+| Area | Isi |
+| --- | --- |
+| [`00-foundation/`](00-foundation/000-purpose.md) | tujuan, ruang lingkup, prinsip, keselarasan SWI, dan glosarium |
+| [`01-governance/`](01-governance/roles-and-responsibilities.md) | peran, hak keputusan, risiko, trusted changes, dan ADR |
+| [`02-workflows/`](02-workflows/idea-to-release.md) | idea-to-release, GitHub, AI handoff, emergency, dan concurrent work |
+| [`03-ai-team/`](03-ai-team/ai-roles.md) | batas peran ChatGPT, ChatGPT Work, Codex, dan HemuHemu |
+| [`04-engineering/`](04-engineering/repository-standards.md) | repository, branch, test, security, deployment, rollback, dan Definition of Done |
+| [`05-product/`](05-product/product-discovery.md) | discovery, PRD, kontribusi pilar, prioritas, rilis, dan pembelajaran |
+| [`templates/`](templates/idea-template.md) | template kerja yang dapat digunakan ulang |
+| [`adr/accepted/`](adr/accepted/ADR-0001-four-pillars-ecosystem.md) | keputusan lintas-ekosistem yang telah diterima |
+| [`patch-log/`](patch-log/README.md) | penjelasan perubahan dalam bahasa operasional |
+
+## Source of Truth
+
+Satu domain memiliki satu sumber kebenaran yang jelas:
+
+- visi, misi, cita-cita, dan arah perusahaan: **SystemSWI**;
+- cara kerja lintas-ekosistem: **SWI Playbook**;
+- source code dan dokumentasi produk: repository masing-masing;
+- data operasional: sistem pemilik domain yang berlaku saat ini.
+
+GitHub menjadi sumber kebenaran untuk kode, dokumentasi, histori keputusan, issue, pull request, dan audit perubahan. Chat boleh digunakan untuk berpikir dan berkoordinasi, tetapi keputusan penting harus dipindahkan ke artifact yang tahan lama.
+
+Rujukan perusahaan: [SystemSWI](https://systemswi.vercel.app/), [Tentang SWI](https://systemswi.vercel.app/about), dan [repository SystemSWI](https://github.com/beriman/systemswi).
+
+## Berkontribusi
+
+Ikuti [CONTRIBUTING.md](CONTRIBUTING.md). Perubahan material harus memiliki scope, risk level, acceptance criteria, verification evidence, dan—bila relevan—rollback plan. Perubahan kecil yang memenuhi kebijakan [Trusted Changes](01-governance/trusted-changes.md) dapat bergerak lebih cepat, tetapi tetap harus dapat diaudit.

@@ -1,68 +1,117 @@
-# Idea-to-Release Workflow
+# Workflow Idea-to-Release
 
-## Purpose
+```text
+Ide
+→ Capture
+→ Research
+→ Decision
+→ Product Definition
+→ Architecture Review
+→ Delivery Planning
+→ Implementation
+→ Verification
+→ Approval/Release
+→ Learn
+```
 
-This workflow prevents ideas from becoming untracked implementation and ensures that important decisions remain understandable after the original conversation ends.
+Tidak semua ide harus menjadi produk. Workflow ini memastikan energi implementasi diberikan setelah masalah, nilai, dan risikonya cukup dipahami.
 
-## Stages
+## 1. Ide
 
-### 1. Capture
+Ide dapat berasal dari pelanggan, komunitas, operator, event, retail, data, pimpinan, atau AI. Pada tahap ini ide boleh belum rapi, tetapi originator dan konteks awal harus diketahui.
 
-Record the idea as a GitHub issue or approved project note.
+Contoh: pengunjung SWI Store membutuhkan cara lebih cepat memilih bahan aroma.
 
-Minimum information:
+## 2. Capture
 
-- problem or opportunity;
-- affected users;
-- desired outcome;
-- urgency and known constraints;
-- originator.
+Catat ide dalam [template ide](../templates/idea-template.md), issue, atau project note resmi.
 
-### 2. Research
+Minimum:
 
-Gather evidence, current-state context, alternatives, dependencies, and risks. Distinguish facts from assumptions.
+- masalah atau peluang;
+- pengguna terdampak;
+- outcome yang diharapkan;
+- pilar utama dan kemungkinan pilar kolaborator;
+- urgency, constraint, dan originator.
 
-### 3. Decision
+Chat dapat menjadi sumber awal, tetapi capture harus berada di artifact yang dapat ditemukan kembali.
 
-The Product Owner decides whether the idea is rejected, parked, explored further, or approved for product definition.
+## 3. Research
 
-Material decisions must be recorded in the issue, PRD, or ADR.
+Pahami current state sebelum memilih solusi:
 
-### 4. Product Definition
+- baca source of truth dan dokumentasi terbaru;
+- kumpulkan evidence pengguna dan operasi;
+- bedakan fakta, asumsi, dan hipotesis;
+- identifikasi alternatif, dependency, risiko, serta sistem terdampak;
+- periksa apakah kapabilitas serupa sudah ada.
 
-Create or update the relevant PRD with:
+Output dapat berupa research note pada issue atau bagian konteks PRD.
 
-- scope and out of scope;
-- user journey;
-- business rules;
-- functional and non-functional requirements;
-- acceptance criteria;
-- analytics and operational implications.
+## 4. Decision
 
-### 5. Architecture Review
+Product Owner memilih salah satu:
 
-Document changes to data, integrations, permissions, state transitions, security, and operations. Create an ADR for significant choices.
+- **reject:** tidak dikerjakan, dengan alasan;
+- **park:** disimpan sampai kondisi tertentu;
+- **explore:** butuh riset atau prototype tambahan;
+- **approve for definition:** layak didefinisikan sebagai produk/perubahan.
 
-### 6. Delivery Planning
+Keputusan material dicatat. Approval untuk product definition bukan otomatis approval deployment.
 
-Break approved scope into issues small enough to implement and verify. Identify dependencies and release sequencing.
+## 5. Product Definition
 
-### 7. Implementation
+Buat atau perbarui PRD. Tetapkan masalah, tujuan, users, scope, out of scope, journey, requirement, business rules, data/integration, risk, metrics, operations, dan acceptance criteria.
 
-Work on a dedicated branch. Keep the pull request focused and link it to the issue and PRD.
+Gunakan PRD penuh bila lintas sistem atau material. Issue terstruktur cukup untuk perubahan kecil.
 
-### 8. Verification
+## 6. Architecture Review
 
-Verify acceptance criteria, automated checks, permissions, failure behavior, auditability, and operational readiness.
+Tinjau:
 
-### 9. Approval and Release
+- source of truth dan ownership data;
+- state transition dan idempotency;
+- integration dan failure mode;
+- permission, privacy, security, dan audit trail;
+- deployment, migration, monitoring, serta rollback;
+- dampak lintas repository dan pilar.
 
-The appropriate owner approves the release. Deployment and migration steps must be recorded when applicable.
+Buat ADR hanya untuk keputusan material yang benar-benar dipilih. Jangan menjadikan opsi teknis yang belum disetujui sebagai keputusan.
 
-### 10. Learn
+## 7. Delivery Planning
 
-Compare outcomes with expected success metrics. Feed lessons back into the PRD, ADR, SOP, or this playbook.
+Pecah scope menjadi increment yang dapat diimplementasikan dan diverifikasi. Untuk setiap task, catat owner, repository, branch, file scope, dependency, risk level, acceptance criteria, verification command, dan expected output.
 
-## Fast-Track Rule
+## 8. Implementation
 
-Urgent work may compress stages, but must not permanently skip documentation, verification, or post-action review.
+Ikuti [GitHub workflow](github-workflow.md) dan [concurrent work](concurrent-work.md). Implementasi harus fokus pada scope. Deviasi material dikembalikan ke owner sebelum diteruskan.
+
+## 9. Verification
+
+Periksa acceptance criteria menggunakan evidence:
+
+- automated test;
+- lint/typecheck/build;
+- review manual;
+- screenshot atau browser flow;
+- query atau log yang aman;
+- dry-run;
+- live verification setelah deploy.
+
+Catat failure, limitation, dan hal yang belum diverifikasi. “Sudah dibuat” bukan evidence.
+
+## 10. Approval/Release
+
+Approval mengikuti [risk classification](../01-governance/risk-and-approval.md). Catat release, migration, rollback readiness, owner operasional, dan patch log. High/critical change tidak boleh dirilis berdasarkan approval AI saja.
+
+## 11. Learn
+
+Bandingkan outcome aktual dengan tujuan dan metrics. Catat:
+
+- apa yang berhasil;
+- apa yang gagal atau mengejutkan;
+- feedback pengguna/operator;
+- incident dan exception;
+- perubahan yang perlu dilakukan pada PRD, ADR, SOP, test, atau playbook.
+
+Pembelajaran yang tidak mengubah artifact akan mudah hilang.

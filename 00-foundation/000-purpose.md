@@ -1,26 +1,41 @@
-# 000 — Tujuan
+# 000 — Tujuan SWI Playbook
 
-## Mengapa SWI Playbook Dibuat
+## Mengapa Playbook Ini Dibuat
 
-SWI berjalan melalui berbagai brand, platform, event, komunitas, produk, dan workflow berbantuan AI. Tanpa cara kerja bersama, pengetahuan akan terpecah di antara percakapan, dokumen, repositori, spreadsheet, dan ingatan masing-masing orang.
+SWI menjalankan brand, platform digital, komunitas, event, retail, dan workflow berbantuan AI. Tanpa cara kerja bersama, pengetahuan mudah terpecah di antara chat, dokumen, repository, spreadsheet, dan ingatan orang yang berbeda.
 
-SWI Playbook dibuat untuk membangun satu bahasa operasional yang tahan lama bagi manusia dan AI.
-
-Playbook ini menjelaskan bagaimana SWI:
-
-1. mengubah ide menjadi usulan yang terstruktur;
-2. mengevaluasi dan menyetujui keputusan;
-3. mencatat keputusan produk dan arsitektur;
-4. melakukan handoff pekerjaan antara manusia dan agen AI;
-5. membangun, menguji, merilis, dan mengoperasikan sistem;
-6. belajar dari hasil serta memperbarui standarnya.
+SWI Playbook memberi manusia dan AI bahasa operasional yang sama. Tujuannya bukan memperbanyak dokumen, melainkan membuat pekerjaan dapat dilanjutkan, diperiksa, dan dipertanggungjawabkan.
 
 ## Hasil yang Diharapkan
 
-Seorang kontributor harus dapat masuk ke proyek SWI, membaca dokumen intinya, memahami kondisi terkini, dan melanjutkan pekerjaan tanpa harus menyusun ulang seluruh sejarah proyek dari percakapan chat.
+Dengan playbook ini, seorang kontributor seharusnya dapat:
+
+1. memahami hubungan pekerjaannya dengan cita-cita dan empat pilar SWI;
+2. menemukan source of truth yang tepat;
+3. membedakan ide, asumsi, keputusan, dan implementasi;
+4. mengetahui siapa yang boleh memutuskan atau menyetujui;
+5. menyerahkan pekerjaan kepada manusia atau AI tanpa kehilangan konteks;
+6. mengimplementasikan perubahan dengan scope dan risiko yang jelas;
+7. membuktikan acceptance criteria melalui verification evidence;
+8. mencatat perubahan serta pelajaran untuk pekerjaan berikutnya.
 
 ## Pernyataan Operasional
 
-> SWI Playbook adalah sistem kerja bersama untuk kolaborasi, bukan pengganti penilaian manusia.
+> SWI Playbook adalah sistem kerja bersama, bukan pengganti penilaian dan tanggung jawab manusia.
 
-Playbook memberikan struktur. Product Owner tetap memegang arah dan kewenangan keputusan akhir.
+AI dapat membantu riset, dokumentasi, implementasi, pengujian, monitoring, dan pelaporan. Human owner tetap bertanggung jawab atas keputusan kritis dan hasil bisnis.
+
+## Ukuran Keberhasilan Awal
+
+Foundation ini berhasil digunakan apabila:
+
+- keputusan penting tidak hanya tersimpan di chat;
+- setiap pekerjaan material memiliki owner, scope, risiko, dan acceptance criteria;
+- handoff tidak memerlukan penyusunan ulang seluruh sejarah proyek;
+- perubahan penting memiliki audit trail dan verification evidence;
+- tim dapat melihat alasan perubahan, bukan hanya diff file;
+- produk lintas pilar tetap selaras sebagai satu ekosistem.
+
+## Cara Memakai Dokumen Ini
+
+Gunakan playbook secara proporsional. Koreksi typo tidak memerlukan PRD. Perubahan payment atau source of truth memerlukan dokumentasi dan approval yang jauh lebih ketat. Klasifikasi pada [risiko dan approval](../01-governance/risk-and-approval.md) menentukan kedalaman proses yang diperlukan.

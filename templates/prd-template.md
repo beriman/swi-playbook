@@ -1,82 +1,151 @@
-# PRD — [Product or Feature Name]
+# PRD — [Nama Produk atau Fitur]
 
 ## Document Control
 
+- **ID:** PRD-[ID]
 - **Owner:**
-- **Status:** Draft / Review / Approved / Deprecated
-- **Version:**
-- **Last updated:**
+- **Approver:**
+- **Status:** Draft / In Review / Approved / Implementing / Released / Superseded / Deprecated
+- **Versi:**
+- **Dibuat:**
+- **Terakhir diperbarui:**
 - **Related repository:**
-- **Related issues:**
-- **Related ADRs:**
+- **Related issue/roadmap:**
+- **Related ADR/data contract:**
+- **Patch log path:**
 
 ## 1. Context
 
-Describe the current situation, business context, and why this work matters now.
+[Current state, evidence, dan alasan pekerjaan diperlukan sekarang.]
 
 ## 2. Problem Statement
 
-Who experiences the problem, what is happening, and what is the consequence?
+[Siapa mengalami masalah, apa yang terjadi, dan apa konsekuensinya?]
 
 ## 3. Product Objective
 
-Define the measurable outcome the product should achieve.
+[Outcome yang spesifik dan dapat dievaluasi.]
 
-## 4. Users and Roles
+## 4. Alignment with SWI
 
-List users, responsibilities, access boundaries, and approval roles.
+[Bagaimana pekerjaan mendukung cita-cita kemandirian wewangian Indonesia?]
 
-## 5. Scope
+## 5. Pillar Contribution
+
+- **Pilar utama:**
+- **Alasan:**
+
+| Pilar kolaborator | Nilai yang diberikan/diterima | Owner atau metric terkait |
+|---|---|---|
+|  |  |  |
+
+## 6. Users and Roles
+
+| User/role | Kebutuhan | Tindakan yang diizinkan | Approval/batas |
+|---|---|---|---|
+|  |  |  |  |
+
+## 7. Scope
 
 ### In Scope
 
-- 
+-
 
 ### Out of Scope
 
-- 
+-
 
-## 6. User Journeys
+## 8. User Journeys
 
-Describe the normal journey and important exception journeys.
+### Normal Journey
 
-## 7. Functional Requirements
+1.
 
-Use IDs such as `FR-001`.
+### Exception/Recovery Journey
 
-| ID | Requirement | Priority | Acceptance Evidence |
+1.
+
+## 9. Functional Requirements
+
+| ID | Requirement | Priority | Acceptance evidence |
 |---|---|---|---|
-| FR-001 |  | Must |  |
+| FR-001 |  | Must / Should / Could |  |
 
-## 8. Business Rules
+## 10. Business Rules
 
-Use IDs such as `BR-001`. Include pricing, permissions, calculations, approvals, state transitions, and exception rules.
+| ID | Rule | Source/approver | Test/exception |
+|---|---|---|---|
+| BR-001 |  |  |  |
 
-## 9. Non-Functional Requirements
+## 11. Non-Functional Requirements
 
-Cover security, privacy, performance, availability, accessibility, auditability, offline behavior, and maintainability.
+| ID | Area | Requirement | Verification |
+|---|---|---|---|
+| NFR-001 | Security / Privacy / Performance / Accessibility / Auditability / Maintainability |  |  |
 
-## 10. Data and Integrations
+## 12. Data and Integrations
 
-Identify authoritative data sources, entities, events, APIs, external providers, and retention needs.
+- **Source of truth:**
+- **Entities dan owner:**
+- **Read/write boundaries:**
+- **API/event/data contract:**
+- **Fallback/freshness:**
+- **Retention/privacy:**
+- **Migration/backward compatibility:**
 
-## 11. Analytics and Success Metrics
+## 13. Analytics and Success Metrics
 
-Define events, reports, baseline, target, and review period.
+| Metric/event | Baseline | Target/expected signal | Source | Review period | Owner |
+|---|---|---|---|---|---|
+|  |  |  |  |  |  |
 
-## 12. Risks and Mitigations
+## 14. Risks
 
-| Risk | Impact | Likelihood | Mitigation | Owner |
+| Risk | Impact | Likelihood | Mitigation | Owner | Residual risk |
+|---|---|---|---|---|---|
+|  |  |  |  |  |  |
+
+- **Overall risk level:** Low / Medium / High-Critical
+- **Reason:**
+
+## 15. Rollout
+
+- **Release stages:**
+- **Migration:**
+- **Feature flag/canary bila ada:**
+- **Rollback trigger:**
+- **Rollback steps:**
+
+## 16. Operations
+
+- **Owner setelah rilis:**
+- **Monitoring/alert:**
+- **Audit trail:**
+- **SOP:**
+- **Exception handling:**
+- **Support/escalation:**
+
+## 17. Acceptance Criteria
+
+| ID | Given / When / Then atau pernyataan testable | Verification | Result/evidence |
+|---|---|---|---|
+| AC-001 |  |  |  |
+
+## 18. Open Decisions
+
+| Decision | Options | Owner | Due/trigger | Status |
 |---|---|---|---|---|
+|  |  |  |  | Open |
 
-## 13. Rollout and Operations
+## 19. Patch Log Requirement
 
-Describe migration, training, release stages, rollback, monitoring, and support ownership.
+- **Wajib dibuat:** Ya / Tidak (jelaskan jika tidak)
+- **Path:**
+- **Owner:**
+- **Diperbarui pada:** PR / Merge / Deployment / Learning review
 
-## 14. Acceptance Criteria
+## 20. Change History
 
-Use testable statements. Avoid subjective wording such as “easy,” “fast,” or “good” without a defined measure.
-
-## 15. Open Decisions
-
-List unresolved items with owner and decision deadline.
+| Versi | Tanggal | Perubahan | Author | Approval |
+|---|---|---|---|---|
+|  |  |  |  |  |

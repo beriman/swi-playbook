@@ -1,61 +1,51 @@
-# AI Team Roles
+# Peran Tim AI
 
-## Principle
+Peran AI adalah batas kemampuan dan kewenangan, bukan gelar. Setiap peran harus memiliki input, output, tool, authority limit, dan jalur handoff yang jelas.
 
-AI roles are capability boundaries, not honorary titles. Each role must have a clear input, output, authority limit, and handoff path.
+## Ringkasan
 
-## ChatGPT — Product and Decision Support
+| Peran | Fokus utama | Output khas | Batas utama |
+| --- | --- | --- | --- |
+| ChatGPT | enterprise/product architecture dan decision support | PRD, ADR, business rules, data contract, spec | bukan background daemon dan bukan approver bisnis |
+| ChatGPT Work | connected product work dan artifact | dokumen, prototype, update connected workspace | koneksi tidak otomatis memberi kewenangan mutasi |
+| Codex | engineering execution | diff, test, commit, pull request | tidak memperluas scope atau menimpa foreign work |
+| HemuHemu | runtime automation pada Hermes Agent | cron result, monitoring, repository action, alert, audit record | tidak melakukan tindakan destruktif atau high-risk tanpa approval |
 
-Typical responsibilities:
+## Prinsip Kerja
 
-- explore business problems;
-- structure product vision, BMC, PRDs, and policies;
-- synthesize research and project context;
-- identify risks, assumptions, and missing decisions;
-- prepare structured handoffs to engineering and operations.
+1. AI membaca source of truth sebelum menyimpulkan current state.
+2. AI membedakan fakta, asumsi, recommendation, dan keputusan.
+3. AI hanya menggunakan tool dalam scope dan kewenangan tugas.
+4. AI berhenti pada blocker yang membutuhkan keputusan manusia.
+5. AI mengembalikan evidence, limitation, dan Open Decision.
+6. Output penting dipindahkan dari chat ke artifact resmi.
+7. AI tidak boleh mengklaim verification yang tidak dilakukan.
 
-Authority limit: may recommend and draft, but does not grant itself business approval.
+## Pembagian Alur Umum
 
-## ChatGPT Work — Connected Product Work
+```text
+Beriman menentukan arah
+→ ChatGPT menyusun keputusan/spec
+→ ChatGPT Work mengembangkan artifact connected bila relevan
+→ Codex mengimplementasikan perubahan engineering
+→ HemuHemu menjalankan workflow/monitoring yang disetujui
+→ manusia meninjau keputusan kritis dan menerima hasil bisnis
+```
 
-Typical responsibilities:
+Alur tidak selalu linear. Codex dapat menemukan risiko yang mengembalikan pekerjaan ke architecture review. HemuHemu dapat menemukan incident yang membutuhkan manusia dan perbaikan engineering.
 
-- work with connected documents and operational context;
-- continue approved product and business workflows;
-- prepare or update shared artifacts;
-- coordinate tasks that require connected workspace context.
+## Agen Lain
 
-## Codex — Engineering
+Agen AI baru harus mendeklarasikan:
 
-Typical responsibilities:
+- tujuan dan owner;
+- input serta source of truth;
+- tool dan data yang dapat diakses;
+- tindakan read-only dan write;
+- risk level maksimum;
+- titik approval;
+- audit trail;
+- retry, timeout, idempotency, dan failure behavior;
+- cara menonaktifkan atau rollback.
 
-- inspect repositories;
-- implement approved requirements;
-- refactor and test code;
-- prepare commits and pull requests;
-- investigate technical defects.
-
-Codex should work from repository context, an issue, PRD, acceptance criteria, and relevant ADRs—not from an isolated feature sentence alone.
-
-## Hermes — Operational Automation
-
-Typical responsibilities:
-
-- execute repeatable operational workflows;
-- monitor orders, inventory, notifications, and exceptions;
-- call approved tools and APIs;
-- generate auditable execution records.
-
-Hermes must use explicit state machines, idempotency, permissions, and approval thresholds for critical workflows.
-
-## Human Handoff Requirement
-
-Every substantial AI output should identify:
-
-- what was understood;
-- what was changed or proposed;
-- assumptions made;
-- evidence or files used;
-- unresolved risks;
-- required human decision;
-- recommended next action.
+Agen tidak memperoleh kewenangan hanya karena mampu menggunakan suatu tool.

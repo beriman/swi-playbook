@@ -1,41 +1,71 @@
 # Definition of Done
 
-A work item is done only when the applicable conditions below are satisfied.
+Pekerjaan hanya boleh dinyatakan selesai setelah seluruh kondisi yang berlaku diperiksa. Item yang tidak relevan boleh ditandai `N/A` dengan alasan, bukan diabaikan diam-diam.
 
 ## Product
 
-- The problem and intended outcome are clear.
-- Scope and out-of-scope boundaries are documented.
-- Acceptance criteria are satisfied.
-- Material deviations from the PRD are recorded and approved.
+- masalah dan tujuan jelas;
+- hubungan dengan SWI dan kontribusi pilar jelas;
+- scope dan out of scope jelas;
+- acceptance criteria terpenuhi;
+- deviasi dari PRD/spec tercatat dan disetujui;
+- Open Decision tidak disamarkan sebagai keputusan final.
 
 ## Engineering
 
-- Implementation is reviewable and focused.
-- Relevant automated tests pass.
-- Error, retry, and duplicate-submission behavior is considered.
-- Permissions and sensitive-data handling are reviewed.
-- Database and API changes are documented.
-- No credentials or secrets are committed.
+- implementasi terfokus pada task scope;
+- review diff dilakukan;
+- test relevan lulus;
+- error, retry, timeout, dan idempotency dipertimbangkan;
+- permission dan data sensitif ditinjau;
+- API, event, database, dan data contract changes didokumentasikan;
+- dependency/config changes terlihat;
+- tidak ada secret atau credential;
+- concurrency safety dipenuhi dan foreign changes tidak ikut ter-commit.
 
 ## Operations
 
-- Required configuration, migration, and rollback steps are documented.
-- Monitoring or audit records exist for critical workflows.
-- Operators know how to handle normal cases and key exceptions.
-- Ownership after release is clear.
+- deployment, configuration, migration, dan rollback terdokumentasi bila relevan;
+- monitoring dan audit trail tersedia untuk workflow penting;
+- SOP atau exception handling tersedia bila diperlukan;
+- owner setelah rilis jelas;
+- automation memiliki trigger, approval gate, retry, stop condition, dan disable procedure yang sesuai;
+- live verification dilakukan bila ada deployment.
 
 ## Documentation
 
-- User-facing, operator-facing, and technical documentation are updated where applicable.
-- The related issue, PRD, and ADR links are present.
-- Important assumptions and limitations are visible.
+- README, PRD, ADR, SOP, data contract, atau dokumen terkait diperbarui;
+- issue, PRD, ADR, PR, dan commit saling terhubung bila relevan;
+- known limitations terlihat;
+- patch log dibuat atau diperbarui;
+- keputusan penting tidak hanya tersimpan di chat.
 
-## Approval
+## Verification
 
-- The appropriate reviewer has reviewed the work.
-- The Product Owner or delegated approver accepts the outcome when business acceptance is required.
+- setiap acceptance criterion memiliki hasil;
+- command/check dan environment/ref dicatat;
+- evidence tersedia;
+- failure atau bagian yang tidak dapat diperiksa terlihat;
+- hasil bukan sekadar klaim “sudah selesai”.
 
-## Evidence
+## Approval dan Release
 
-Completion must be supported by evidence such as test output, screenshots, logs, queries, review comments, or an explicit acceptance record. “Looks finished” is not evidence.
+- risk level terakhir dikonfirmasi;
+- reviewer dan human approval sesuai tingkat risiko tersedia;
+- commit yang diterima sama dengan commit yang dirilis;
+- branch utama dan deployment diverifikasi;
+- rollback trigger diketahui.
+
+## Completion Record
+
+Laporan akhir minimal memuat:
+
+- status: selesai, partial, atau blocked;
+- repository, branch, commit, dan PR;
+- perubahan dan impact;
+- verification dan evidence;
+- deployment/merge status;
+- patch log;
+- known limitations;
+- Open Decision;
+- next step.
