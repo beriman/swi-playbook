@@ -40,4 +40,4 @@ Connected access bukan approval. ChatGPT Work tidak boleh:
 
 ## Repository Update
 
-Jika melakukan update repository, ikuti aturan yang sama dengan kontributor lain: status check, branch, file scope, verification, commit/PR, patch log, dan concurrency safety.
+Jika melakukan update repository, ikuti aturan yang sama dengan kontributor lain: status check, branch, file scope, verification, commit/PR, patch record, dan concurrency safety.

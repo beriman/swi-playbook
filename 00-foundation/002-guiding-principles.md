@@ -38,7 +38,7 @@ File atau kode yang sudah dibuat belum berarti selesai. Pekerjaan selesai setela
 
 ## 10. Trusted Changes Tetap Tercatat
 
-Perubahan kecil, aman, reversible, dan selaras dapat dikerjakan tanpa meminta approval pada setiap detail. Kecepatan tidak menghapus kewajiban verification, commit history, patch log, atau laporan.
+Perubahan kecil, aman, reversible, dan selaras dapat dikerjakan tanpa meminta approval pada setiap detail. Kecepatan tidak menghapus kewajiban verification, commit history, patch record, atau laporan. Maintenance kecil boleh memakai log bulanan.
 
 ## 11. Keputusan Penting Tidak Boleh Hanya Hidup di Chat
 

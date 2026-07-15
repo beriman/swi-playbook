@@ -1,0 +1,31 @@
+name: Verify SWI Playbook
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-playbook-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  documentation-quality:
+    name: Documentation quality
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Markdown lint
+        run: npx --yes markdownlint-cli2@0.23.0 '**/*.md' '#node_modules' '#.git'
+
+      - name: Playbook policy checks
+        run: node scripts/verify-playbook.mjs

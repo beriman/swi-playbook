@@ -59,7 +59,7 @@ Verification
 Impact
 Known limitations
 Rollback
-Related issue/PRD/ADR/patch log
+Related issue/PRD/ADR/patch record
 ```
 
 Tambahkan screenshot atau rekaman flow untuk perubahan UI bila membantu review.
@@ -73,7 +73,7 @@ Tambahkan screenshot atau rekaman flow untuk perubahan UI bila membantu review.
 - error/retry/idempotency ditinjau;
 - permission, data sensitif, dan secret ditinjau;
 - migration/deployment/rollback jelas;
-- docs dan patch log diperbarui;
+- docs dan patch record diperbarui;
 - Open Decision tidak disamarkan sebagai implementasi final.
 
 ## Merge

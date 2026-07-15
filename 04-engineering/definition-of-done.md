@@ -37,7 +37,7 @@ Pekerjaan hanya boleh dinyatakan selesai setelah seluruh kondisi yang berlaku di
 - README, PRD, ADR, SOP, data contract, atau dokumen terkait diperbarui;
 - issue, PRD, ADR, PR, dan commit saling terhubung bila relevan;
 - known limitations terlihat;
-- patch log dibuat atau diperbarui;
+- patch log tersendiri atau maintenance log bulanan dibuat/diperbarui sesuai dampak;
 - keputusan penting tidak hanya tersimpan di chat.
 
 ## Verification
@@ -65,7 +65,7 @@ Laporan akhir minimal memuat:
 - perubahan dan impact;
 - verification dan evidence;
 - deployment/merge status;
-- patch log;
+- patch record;
 - known limitations;
 - Open Decision;
 - next step.

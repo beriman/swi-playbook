@@ -23,8 +23,10 @@ Istilah teknis dipertahankan dalam bahasa Inggris apabila lebih umum, tetapi mak
 | Idempotency | sifat operasi yang aman diulang tanpa menghasilkan dampak ganda yang tidak diinginkan |
 | Issue | unit kerja atau pencatatan masalah di GitHub |
 | MVP | rilis bernilai terkecil yang aman untuk menguji nilai nyata |
+| Maintenance log | patch record bulanan untuk mengelompokkan perubahan editorial kecil yang tidak mengubah behavior atau kebijakan |
 | Open Decision | keputusan yang belum disetujui; tidak boleh diperlakukan sebagai business rule final |
 | Patch log | catatan perubahan yang mudah dipahami manusia dan agen; bukan pengganti Git history |
+| Patch record | istilah umum untuk patch log tersendiri atau entri maintenance log bulanan |
 | Pilar kolaborator | pilar lain yang berkontribusi atau menerima nilai dari aktivitas |
 | Pilar utama | fokus atau kontribusi terbesar suatu aktivitas |
 | PRD | Product Requirements Document; definisi masalah, tujuan, ruang lingkup, requirement, dan penerimaan produk |

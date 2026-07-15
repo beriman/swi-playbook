@@ -2,9 +2,10 @@
 
 Panduan resmi cara kerja bersama manusia dan AI di seluruh ekosistem PT Sensasi Wangi Indonesia.
 
-- **Versi:** v0.1 — Foundation
+- **Versi:** v0.1.1 — Foundation
 - **Status:** aktif sebagai fondasi; disempurnakan melalui perubahan yang tercatat
 - **Pemilik:** Beriman / Product Owner SWI
+- **Review rutin:** paling sedikit setiap 3 bulan
 
 ## Arah yang Dijaga
 
@@ -44,6 +45,8 @@ Playbook ini tidak menggantikan visi dan misi perusahaan, dokumentasi produk, SO
 
 ## Mulai dari Sini
 
+Agen AI memulai dari [`AGENTS.md`](AGENTS.md). File tersebut merangkum urutan baca, source of truth, batas kewenangan, patch record, dan verification wajib.
+
 Jika baru bergabung, baca berurutan:
 
 1. [Tujuan](00-foundation/000-purpose.md), [ruang lingkup](00-foundation/001-scope.md), dan [keselarasan SWI](00-foundation/003-swi-alignment.md).
@@ -58,7 +61,7 @@ Untuk memulai pekerjaan baru, gunakan [template ide](templates/idea-template.md)
 | Area | Isi |
 | --- | --- |
 | [`00-foundation/`](00-foundation/000-purpose.md) | tujuan, ruang lingkup, prinsip, keselarasan SWI, dan glosarium |
-| [`01-governance/`](01-governance/roles-and-responsibilities.md) | peran, hak keputusan, risiko, trusted changes, dan ADR |
+| [`01-governance/`](01-governance/roles-and-responsibilities.md) | peran, hak keputusan, risiko, trusted changes, ADR, dan pemeliharaan playbook |
 | [`02-workflows/`](02-workflows/idea-to-release.md) | idea-to-release, GitHub, AI handoff, emergency, dan concurrent work |
 | [`03-ai-team/`](03-ai-team/ai-roles.md) | batas peran ChatGPT, ChatGPT Work, Codex, dan HemuHemu |
 | [`04-engineering/`](04-engineering/repository-standards.md) | repository, branch, test, security, deployment, rollback, dan Definition of Done |
@@ -80,6 +83,12 @@ GitHub menjadi sumber kebenaran untuk kode, dokumentasi, histori keputusan, issu
 
 Rujukan perusahaan: [SystemSWI](https://systemswi.vercel.app/), [Tentang SWI](https://systemswi.vercel.app/about), dan [repository SystemSWI](https://github.com/beriman/systemswi).
 
+Visi dan misi lengkap tidak diduplikasi di Playbook. Review berkala memastikan link dan ringkasan keselarasan tetap aktual terhadap SystemSWI.
+
+## Enforcement Otomatis
+
+Setiap pull request dan push ke `main` menjalankan [GitHub Actions verification](.github/workflows/verify-playbook.yml) untuk Markdown lint, internal links, penamaan resmi, credential patterns, file kosong, dan minimum structure. Kontributor tetap menjalankan perintah lokal pada [`AGENTS.md`](AGENTS.md) sebelum meminta review.
+
 ## Berkontribusi
 
-Ikuti [CONTRIBUTING.md](CONTRIBUTING.md). Perubahan material harus memiliki scope, risk level, acceptance criteria, verification evidence, dan—bila relevan—rollback plan. Perubahan kecil yang memenuhi kebijakan [Trusted Changes](01-governance/trusted-changes.md) dapat bergerak lebih cepat, tetapi tetap harus dapat diaudit.
+Ikuti [CONTRIBUTING.md](CONTRIBUTING.md). Perubahan material harus memiliki scope, risk level, acceptance criteria, verification evidence, dan—bila relevan—rollback plan. Perubahan kecil yang memenuhi kebijakan [Trusted Changes](01-governance/trusted-changes.md) dapat bergerak lebih cepat, tetapi tetap harus dapat diaudit melalui maintenance log bulanan. Ownership dan review mengikuti [Pemeliharaan SWI Playbook](01-governance/playbook-maintenance.md).

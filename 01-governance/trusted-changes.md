@@ -23,7 +23,7 @@ Jika satu syarat tidak terpenuhi, gunakan workflow medium/high risk.
 - koreksi bahasa dan typo;
 - dokumentasi dan template;
 - perbaikan link;
-- patch log;
+- patch record tersendiri atau maintenance log bulanan sesuai dampaknya;
 - struktur folder dokumentasi;
 - test tambahan;
 - perbaikan UI kecil;
@@ -39,7 +39,7 @@ Identifikasi perubahan kecil
 → Implementasi
 → Verification
 → Commit/Merge
-→ Patch Log
+→ Patch Record
 → Laporan
 ```
 
@@ -51,7 +51,7 @@ Branch pendek tetap disarankan ketika ada kerja paralel atau repository policy m
 - verification command atau pemeriksaan manual;
 - hasil pass/fail;
 - diff yang telah ditinjau;
-- patch log atau laporan perubahan.
+- patch log tersendiri atau entri maintenance bulanan.
 
 ## Stop Conditions
 

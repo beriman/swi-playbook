@@ -18,7 +18,7 @@ Identifikasi perubahan kecil
 → Implementasi
 → Verification
 → Commit/Merge
-→ Patch Log
+→ Patch Record
 → Laporan
 ```
 
@@ -106,7 +106,7 @@ Setelah merge:
 2. jalankan build/deploy sesuai repository;
 3. lakukan live verification jika ada runtime;
 4. periksa monitoring atau error awal;
-5. perbarui patch log dengan PR dan commit;
+5. perbarui patch log tersendiri atau maintenance log dengan PR dan commit;
 6. laporkan limitation dan next action.
 
 ## Dilarang
