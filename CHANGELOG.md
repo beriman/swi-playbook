@@ -2,6 +2,22 @@
 
 Perubahan penting SWI Playbook dicatat di sini. Detail operasional tersedia pada [patch log](patch-log/README.md).
 
+## v0.1.1 — 2026-07-15
+
+### Added
+
+- GitHub Actions verification untuk setiap PR dan push ke `main`;
+- verifier internal untuk link, penamaan, credential patterns, file kosong, dan struktur minimum;
+- `AGENTS.md` sebagai entry point agen;
+- governance pemeliharaan serta ADR-0005.
+
+### Changed
+
+- maintenance kecil menggunakan log bulanan;
+- Beriman ditetapkan sebagai Product Owner Playbook;
+- review rutin dilakukan paling sedikit setiap 3 bulan dengan trigger insidental;
+- visi dan misi tetap dirujuk ke SystemSWI dan tidak diduplikasi.
+
 ## v0.1.0 — 2026-07-15
 
 ### Added

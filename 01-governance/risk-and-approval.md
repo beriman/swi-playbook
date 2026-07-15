@@ -34,7 +34,7 @@ Workflow:
 - boleh memakai [Trusted Changes](trusted-changes.md);
 - scope dan owner tetap jelas;
 - verification wajib;
-- commit history dan patch log tetap dibuat;
+- commit history dan patch record tetap dibuat;
 - dapat di-merge tanpa approval pada setiap detail bila kebijakan repository mengizinkan.
 
 ## Medium Risk
@@ -59,7 +59,7 @@ Wajib:
 5. implementasi serta test;
 6. pull request;
 7. review;
-8. patch log;
+8. patch log tersendiri;
 9. live verification bila dirilis.
 
 ## High/Critical Risk

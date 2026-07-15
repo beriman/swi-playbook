@@ -71,3 +71,4 @@ ADR tidak boleh dipakai untuk menyamarkan keputusan yang belum mendapat approval
 - [ADR-0002 — SWI Playbook sebagai Pedoman Lintas Ekosistem](../adr/accepted/ADR-0002-swi-playbook-cross-ecosystem.md)
 - [ADR-0003 — SystemSWI sebagai Pusat Informasi dan Pengawasan](../adr/accepted/ADR-0003-systemswi-information-and-oversight.md)
 - [ADR-0004 — Keputusan Penting Harus Memiliki Artifact Tahan Lama](../adr/accepted/ADR-0004-durable-decision-records.md)
+- [ADR-0005 — Ownership dan Cadence Pemeliharaan SWI Playbook](../adr/accepted/ADR-0005-playbook-ownership-and-review-cadence.md)

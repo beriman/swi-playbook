@@ -31,10 +31,12 @@ Kontribusi harus membuat cara kerja SWI lebih jelas, dapat diterapkan, dan dapat
 - instruksi engineering: [implementation spec](templates/implementation-spec-template.md);
 - perubahan: [template patch log](templates/patch-log-template.md).
 
+Untuk typo, format, link kecil, atau perbaikan kalimat tanpa perubahan makna, tambahkan entri pada maintenance log bulanan. Perubahan policy, CI, template, ADR, risk rule, atau release memakai patch log tersendiri.
+
 ## Workflow
 
 - low risk: ikuti [Trusted Changes](01-governance/trusted-changes.md);
-- medium/high risk: issue/spec, branch, verification, PR, review, approval, merge, dan patch log;
+- medium/high risk: issue/spec, branch, verification, PR, review, approval, merge, dan patch log tersendiri;
 - jangan push medium/high risk langsung ke `main`;
 - jangan `reset`, `stash`, overwrite, atau hapus foreign work.
 
@@ -54,7 +56,7 @@ Sebelum PR:
 - cari istilah/penamaan yang tidak konsisten;
 - pastikan file tidak kosong dan navigasi diperbarui;
 - review duplikasi serta kontradiksi;
-- perbarui patch log.
+- perbarui patch log tersendiri atau maintenance log bulanan sesuai dampak.
 
 ## Pull Request
 
@@ -62,4 +64,4 @@ PR menjelaskan tujuan, risk level, scope, verification, impact, limitation, dan 
 
 ## Definition of Done
 
-Gunakan [Definition of Done](04-engineering/definition-of-done.md). Perubahan belum selesai jika hanya file yang dibuat, tetapi evidence dan patch log belum tersedia.
+Gunakan [Definition of Done](04-engineering/definition-of-done.md). Perubahan belum selesai jika hanya file yang dibuat, tetapi evidence dan patch record belum tersedia.
